@@ -111,8 +111,10 @@
       $("title").textContent = p.title;
       $("tagline").textContent = p.tagline;
       $("location").textContent = p.location;
-      $("hero-links").innerHTML = linkButtons(p);
-      $("contact-links").innerHTML = linkButtons(p);
+      const research = (d.researchLinks || []).filter((l) => l.url)
+        .map((l) => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+      $("hero-links").innerHTML = linkButtons(p) + research;
+      $("contact-links").innerHTML = linkButtons(p) + research;
       $("footer-name").textContent = p.name;
       $("year").textContent = new Date().getFullYear();
 
@@ -148,8 +150,7 @@
         </li>`;
       $("pub-list").innerHTML = d.publications.map(pubItem).join("");
       $("wp-list").innerHTML = d.workingPapers.map(pubItem).join("");
-      $("research-links").innerHTML = d.researchLinks.filter((l) => l.url)
-        .map((l) => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+      $("research-links").innerHTML = research;
 
       $("skill-list").innerHTML = Object.entries(d.skills).map(([group, list]) => `
         <div class="skill-row">
