@@ -280,13 +280,19 @@
       "title": "Engineering and Health Science Collaborative Model for Assessing AR and Vision-Based Hand-Tracking Systems",
       "venue": "ASEE 2026",
       "note": "",
-      "link": ""
+      "link": "https://peer.asee.org/engineering-and-health-science-collaborative-model-for-assessing-augmented-reality-and-vision-based-hand-tracking-systems"
+    },
+    {
+      "title": "TheraXP — AI-Powered Gamified Digital Rehab Platform",
+      "venue": "InnovAGE 2026",
+      "note": "",
+      "link": "https://www.uml.edu/news/stories/2026/innovage-fellowship.aspx"
     },
     {
       "title": "Context-Aware Informatics using Model-Based Systems Engineering",
       "venue": "IEEE ICHI 2026",
       "note": "",
-      "link": ""
+      "link": "https://ieeexplore.ieee.org/abstract/document/11634986"
     },
     {
       "title": "Interfaces for Co-Designing Augmented Reality with Application to Digital Health and Future Work Environments",
@@ -298,19 +304,37 @@
       "title": "Integrating Neuromorphic Sensors, Digital Twins, and MBSE Interfaces for System Validation",
       "venue": "IEEE SYSCON 2026",
       "note": "Best Student Paper Award",
-      "link": ""
+      "link": "https://ieeexplore.ieee.org/abstract/document/11503544"
+    },
+    {
+      "title": "Engineering and Physical Therapy Students Collaborate on Augmented Reality for Hand Rehabilitation",
+      "venue": "UMass Lowell News 2026",
+      "note": "",
+      "link": "https://www.uml.edu/news/stories/2026/augmented-reality.aspx"
     },
     {
       "title": "Hand Tracking and Gesture Classification Using AR Technology and ML Algorithms",
       "venue": "Master’s Thesis 2025",
       "note": "",
-      "link": ""
+      "link": "https://www.proquest.com/docview/3216781063?sourcetype=Dissertations%20&%20Theses"
     },
     {
       "title": "Digital Engineering Framework with Immersive Technology (Augmented Reality)",
       "venue": "IEEE SYSCON 2025",
       "note": "",
-      "link": ""
+      "link": "https://ieeexplore.ieee.org/document/11014833"
+    },
+    {
+      "title": "Deep Learning Technique for Melanoma Detection with IOT",
+      "venue": "IEEE-ICEECT 2020",
+      "note": "",
+      "link": "https://github.com/GayathriBoopathyUML/Gayathri-Publications/blob/main/ICEECT.jpg"
+    },
+    {
+      "title": "IOT based Fire Extinguisher and Detector using Wireless Sensor and Actor Network",
+      "venue": "IEEE-ICETECH 2018",
+      "note": "",
+      "link": "https://github.com/GayathriBoopathyUML/Gayathri-Publications/blob/main/ICETECH.jpg"
     }
   ],
   "workingPapers": [
