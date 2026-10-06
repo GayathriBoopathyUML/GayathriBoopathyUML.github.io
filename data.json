@@ -1,9 +1,8 @@
 {
   "profile": {
     "name": "Gayathri Boopathy",
-    "title": "PhD Candidate in Computer Engineering · AR/XR · AI/ML · Full-Stack",
-    "tagline": "I build AR-based hand-gesture and eye-gaze systems, AI-driven digital rehabilitation, and human–robot interaction at the CACT Lab, UMass Lowell.",
-    "location": "Lowell, MA",
+    "title": "PhD Candidate in Computer Engineering · AR/VR/XR · AI/ML · Full-Stack",
+    "tagline": "I build hand-gesture, eye-gaze and full-body tracking systems for AR/VR/XR and smart glasses, AI-driven digital rehabilitation, and human–robot interaction, using Model-Based Systems Engineerin (MBSE), at the CACT Lab, UMass Lowell.",    "location": "Lowell, MA",
     "email": "gayathri_boopathy@student.uml.edu",
     "linkedin": "https://www.linkedin.com/in/gayathri-boopathy/",
     "github": "https://github.com/GayathriBoopathyUML",
@@ -137,6 +136,15 @@
         "Conducting research on AR-based hand gesture recognition, eye-gaze tracking, ML/AI-driven interactive systems and XR Spatial Computing.",
         "Developing real-time hand gesture and eye-gaze tracking models using MediaPipe and AR devices; applying MBSE and SysML for system integration.",
         "Enabling remote control of robotic arms and mechanical systems through hand gestures and eye-gaze inputs using MQTT communication protocols."
+      ]
+    },
+    {
+      "role": "Teaching Assistant (Ph.D. Candidate)",
+      "org": "Department of Electrical & Computer Engineering, University of Massachusetts Lowell",
+      "dates": "08/2025 – Present",
+      "points": [
+        "TA for Electronics I, an undergraduate course in the Department of Electrical & Computer Engineering.",
+        "TA for the Digital Engineering course for graduate students and industry professionals, covering Model-Based Systems Engineering (MBSE), Systems Modeling Language (SysML), the MagicGrid framework, and the Unified Architecture Framework (UAF)."
       ]
     },
     {
