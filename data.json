@@ -338,15 +338,15 @@
   "researchLinks": [
     {
       "label": "ResearchGate",
-      "url": ""
+      "url": "https://www.researchgate.net/profile/Gayathri-Boopathy"
     },
     {
       "label": "Google Scholar",
-      "url": ""
+      "url": "https://scholar.google.com/citations?user=7QkStewAAAAJ&hl=en&oi=sra"
     },
     {
       "label": "Research Portfolio",
-      "url": ""
+      "url": "https://morseatuml.us/research/ar-pt/"
     }
   ],
   "awards": [
