@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gayathri Boopathy | Portfolio</title>
+  <meta name="description" content="Portfolio of Gayathri Boopathy – PhD candidate in Computer Engineering at UMass Lowell working on AR/XR, AI/ML and digital health." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand" id="brand">GB</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap" id="about">
+      <p class="eyebrow" id="location"></p>
+      <h1 id="name"></h1>
+      <p class="title" id="title"></p>
+      <p class="tagline" id="tagline"></p>
+      <div class="links" id="hero-links"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="wrap section">
+      <h2>Education</h2>
+      <div class="grid-3" id="education"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="wrap section" id="experience">
+      <h2>Research &amp; Professional Experience</h2>
+      <div class="timeline" id="experience-list"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="wrap section" id="projects">
+      <h2>Research Projects</h2>
+      <div class="grid-2" id="project-list"></div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="wrap section" id="publications">
+      <h2>Publications</h2>
+      <div class="research-links" id="research-links"></div>
+      <ol class="pubs" id="pub-list"></ol>
+      <h3>Working Papers</h3>
+      <ol class="pubs" id="wp-list"></ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="wrap section" id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills" id="skill-list"></div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="wrap section">
+      <h2>Awards &amp; Involvement</h2>
+      <div class="grid-2" id="award-list"></div>
+      <div class="chips involvement" id="involvement"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="wrap section contact" id="contact">
+      <h2>Get in touch</h2>
+      <p>Open to research collaborations, internships and conversations about AR/XR, AI and digital health.</p>
+      <div class="links" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year"></span> <span id="footer-name"></span> · Built with HTML, CSS &amp; JSON on GitHub Pages</p>
+  </footer>
+
+  <script>
+    // All content comes from data.json — edit that file to update the site.
+    const $ = (id) => document.getElementById(id);
+    const esc = (s = "") => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+    function linkButtons(p) {
+      const items = [
+        p.email && { label: "Email", url: "mailto:" + p.email },
+        p.linkedin && { label: "LinkedIn", url: p.linkedin },
+        p.github && { label: "GitHub", url: p.github },
+        p.resume && { label: "Résumé", url: p.resume },
+      ].filter(Boolean);
+      return items.map((l, i) =>
+        `<a class="btn ${i === 0 ? "primary" : ""}" href="${esc(l.url)}" target="_blank" rel="noopener">${l.label}</a>`
+      ).join("");
+    }
+
+    function render(d) {
+      const p = d.profile;
+      document.title = `${p.name} | Portfolio`;
+      $("name").textContent = p.name;
+      $("title").textContent = p.title;
+      $("tagline").textContent = p.tagline;
+      $("location").textContent = p.location;
+      $("hero-links").innerHTML = linkButtons(p);
+      $("contact-links").innerHTML = linkButtons(p);
+      $("footer-name").textContent = p.name;
+      $("year").textContent = new Date().getFullYear();
+
+      $("education").innerHTML = d.education.map((e) => `
+        <article class="card">
+          <p class="meta">${esc(e.dates)}</p>
+          <h3>${esc(e.degree)}</h3>
+          <p>${esc(e.school)}</p>
+          <p class="gpa">CGPA ${esc(e.gpa)}</p>
+        </article>`).join("");
+
+      $("experience-list").innerHTML = d.experience.map((x) => `
+        <article class="tl-item">
+          <div class="tl-head">
+            <div><h3>${esc(x.role)}</h3><p class="org">${esc(x.org)}</p></div>
+            <p class="meta">${esc(x.dates)}</p>
+          </div>
+          <ul>${x.points.map((pt) => `<li>${esc(pt)}</li>`).join("")}</ul>
+        </article>`).join("");
+
+      $("project-list").innerHTML = d.projects.map((pr) => `
+        <article class="card project">
+          <h3>${pr.link ? `<a href="${esc(pr.link)}" target="_blank" rel="noopener">${esc(pr.name)}</a>` : esc(pr.name)}</h3>
+          <div class="chips">${pr.tags.map((t) => `<span class="chip">${esc(t)}</span>`).join("")}</div>
+          <ul>${pr.points.map((pt) => `<li>${esc(pt)}</li>`).join("")}</ul>
+        </article>`).join("");
+
+      const pubItem = (pb) => `
+        <li>
+          <span class="pub-title">${pb.link ? `<a href="${esc(pb.link)}" target="_blank" rel="noopener">${esc(pb.title)}</a>` : esc(pb.title)}</span>
+          <span class="pub-venue">${esc(pb.venue)}</span>
+          ${pb.note ? `<span class="badge">${esc(pb.note)}</span>` : ""}
+        </li>`;
+      $("pub-list").innerHTML = d.publications.map(pubItem).join("");
+      $("wp-list").innerHTML = d.workingPapers.map(pubItem).join("");
+      $("research-links").innerHTML = d.researchLinks.filter((l) => l.url)
+        .map((l) => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+
+      $("skill-list").innerHTML = Object.entries(d.skills).map(([group, list]) => `
+        <div class="skill-row">
+          <h4>${esc(group)}</h4>
+          <div class="chips">${list.map((s) => `<span class="chip">${esc(s)}</span>`).join("")}</div>
+        </div>`).join("");
+
+      $("award-list").innerHTML = d.awards.map((a) => `
+        <article class="card award"><h3>${esc(a.title)}</h3><p>${esc(a.detail)}</p></article>`).join("");
+      $("involvement").innerHTML = d.involvement.map((s) => `<span class="chip">${esc(s)}</span>`).join("");
+    }
+
+    fetch("data.json")
+      .then((r) => r.json())
+      .then(render)
+      .catch((err) => {
+        document.querySelector("main").innerHTML =
+          `<p class="wrap error">Couldn't load data.json. If you opened this file directly, run a local server instead (see README). Error: ${esc(String(err))}</p>`;
+      });
+  </script>
+</body>
+</html>

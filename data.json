@@ -1,0 +1,382 @@
+{
+  "profile": {
+    "name": "Gayathri Boopathy",
+    "title": "PhD Candidate in Computer Engineering · AR/XR · AI/ML · Full-Stack",
+    "tagline": "I build AR-based hand-gesture and eye-gaze systems, AI-driven digital rehabilitation, and human–robot interaction at the CACT Lab, UMass Lowell.",
+    "location": "Lowell, MA",
+    "email": "gayathri_boopathy@student.uml.edu",
+    "linkedin": "https://www.linkedin.com/in/gayathri-boopathy/",
+    "github": "https://github.com/GayathriBoopathyUML",
+    "resume": ""
+  },
+  "education": [
+    {
+      "degree": "PhD in Computer Engineering",
+      "school": "University of Massachusetts Lowell",
+      "gpa": "4.0/4",
+      "dates": "05/2025 – 05/2030"
+    },
+    {
+      "degree": "MS in Computer Engineering (with Thesis)",
+      "school": "University of Massachusetts Lowell",
+      "gpa": "4.0/4",
+      "dates": "08/2023 – 05/2025"
+    },
+    {
+      "degree": "BE in Electronics & Communication",
+      "school": "Anna University, India",
+      "gpa": "8/10",
+      "dates": "07/2016 – 06/2020"
+    }
+  ],
+  "skills": {
+    "Programming Languages": [
+      "Python",
+      "C",
+      "C++",
+      "C#",
+      "JavaScript (ES6+)",
+      "TypeScript"
+    ],
+    "Operating Systems": [
+      "Linux (Ubuntu)",
+      "Windows",
+      "macOS"
+    ],
+    "Frontend": [
+      "React.js",
+      "React Native",
+      "Next.js",
+      "Redux",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Material-UI",
+      "SASS",
+      "jQuery",
+      "Webpack",
+      "Babel",
+      "NPM",
+      "Yarn",
+      "HTML5",
+      "CSS3"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express.js",
+      "Django",
+      "Flask",
+      "FastAPI",
+      "Spring Boot",
+      "RESTful APIs",
+      "Microservices",
+      "Kafka",
+      "Postman"
+    ],
+    "AI / ML": [
+      "Supervised, Unsupervised & Reinforcement Learning",
+      "Computer Vision",
+      "NLP",
+      "LLMs",
+      "AI Agents"
+    ],
+    "ML Libraries": [
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "OpenCV",
+      "MediaPipe",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "SciPy",
+      "Seaborn",
+      "MLflow"
+    ],
+    "Embedded & IoT": [
+      "Embedded C",
+      "RTOS",
+      "Arduino",
+      "Raspberry Pi",
+      "UART",
+      "I2C",
+      "SPI",
+      "USB",
+      "BLE",
+      "MQTT"
+    ],
+    "DevOps & Tools": [
+      "Docker",
+      "Jenkins",
+      "GitLab CI/CD",
+      "Terraform",
+      "Git",
+      "GitHub",
+      "Bitbucket",
+      "JIRA",
+      "Agile/Scrum",
+      "Contentful"
+    ],
+    "MBSE & Simulation": [
+      "MATLAB",
+      "LabVIEW",
+      "ModelSim",
+      "Quartus",
+      "SysML",
+      "MagicDraw",
+      "Cameo",
+      "Unity",
+      "ThingLink"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Research Assistant (Ph.D Candidate)",
+      "org": "CACT Lab, University of Massachusetts Lowell",
+      "dates": "05/2025 – 05/2030",
+      "points": [
+        "Conducting research on AR-based hand gesture recognition, eye-gaze tracking, ML/AI-driven interactive systems and XR Spatial Computing.",
+        "Developing real-time hand gesture and eye-gaze tracking models using MediaPipe and AR devices; applying MBSE and SysML for system integration.",
+        "Enabling remote control of robotic arms and mechanical systems through hand gestures and eye-gaze inputs using MQTT communication protocols."
+      ]
+    },
+    {
+      "role": "Graduate Research Assistant (Master’s Thesis)",
+      "org": "CACT Lab, University of Massachusetts Lowell",
+      "dates": "08/2023 – 05/2025",
+      "points": [
+        "Researched Augmented Reality (AR), AI, and Digital Twin technologies using Magic Leap for real-time hand tracking.",
+        "Built Unity (OpenXR, C#) interactive AR systems integrated with Python-based MediaPipe hand pose estimation.",
+        "Applied ML models (Random Forest, KNN, Decision Trees, GMM) & LLMs for gesture classification & biomechanical analysis.",
+        "Developed supervised and unsupervised models to classify hand movements such as flexion, extension, open, and close."
+      ]
+    },
+    {
+      "role": "Software Developer – Full Stack",
+      "org": "Infosys Equinox (formerly Skava Systems), India",
+      "dates": "08/2019 – 11/2022",
+      "points": [
+        "Developed and optimized B2C/B2B eCommerce platforms using React.js, Node.js, JavaScript, HTML, CSS, and SASS.",
+        "Improved API performance by ~40% through caching strategies, database optimization, and secure authentication mechanisms.",
+        "Designed and deployed CI/CD pipelines with Jenkins and Git, reducing deployment time by 50%.",
+        "Built microservices-based backends for product catalog, checkout, and order management using Node.js and Spring Boot.",
+        "Led frontend performance optimization using Redux, Webpack, Babel, npm, and Yarn, reducing page load time by ~30%.",
+        "Automated testing and verification using Python, saving 15-17 hours/week and reducing manual effort by 70%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "TheraXP – AI-Powered Gamified Digital Rehab Platform",
+      "tags": [
+        "AR/XR",
+        "Computer Vision",
+        "MBSE",
+        "Digital Health"
+      ],
+      "link": "",
+      "points": [
+        "Developing an AI-powered gamified rehabilitation platform integrating AR/XR, computer vision, HMI, and MBSE for personalized, data-driven therapy.",
+        "Designing a scalable healthcare ecosystem for hand, eye, & full-body rehabilitation using multimodal sensing, AI-based assessment, & clinician feedback.",
+        "Applying enterprise architecture and MBSE to integrate real-time biomechanical sensing, digital therapeutics, and gamification for accessible rehabilitation."
+      ]
+    },
+    {
+      "name": "Real-Time AR Object Detection System",
+      "tags": [
+        "TensorFlow",
+        "YOLO",
+        "WebSockets",
+        "AR"
+      ],
+      "link": "",
+      "points": [
+        "Built a real-time object detection pipeline using TensorFlow (shape detection) and YOLO (object recognition).",
+        "Streamed live camera frames via WebSockets for backend inference and result synchronization.",
+        "Integrated detected objects into the AR scene with spatially anchored visual overlays."
+      ]
+    },
+    {
+      "name": "AR-Based Robotic Arm Control using Hand Gestures",
+      "tags": [
+        "Unity",
+        "MediaPipe",
+        "MQTT",
+        "SysML"
+      ],
+      "link": "",
+      "points": [
+        "Goal: an intuitive AR-based human-machine interaction system that enables touchless control of robotic arms using hand gestures.",
+        "Designed an AR-driven system to control robotic arms and mechanical systems using Unity, MediaPipe, and MQTT.",
+        "Implemented gesture-based authentication and adaptable hand gesture control mechanisms.",
+        "Applied SysML and MBSE to model system architecture, data flow, and store structured gesture and control data."
+      ]
+    },
+    {
+      "name": "Customizable Hand Gesture Classification with Machine Learning",
+      "tags": [
+        "K-means",
+        "AR",
+        "MBSE"
+      ],
+      "link": "",
+      "points": [
+        "Goal: a personalized hand gesture classification framework that adapts to individual user biomechanics for improved accuracy in AR.",
+        "Applied K-means clustering to classify hand gestures and derive adaptive threshold values.",
+        "Validated adaptable gesture thresholds through real-time AR-based virtual task analysis.",
+        "Used SysML and MBSE methodologies to model hand gesture data, system behavior, and parameter storage for adaptive learning."
+      ]
+    },
+    {
+      "name": "Full-Stack Web Apps: Carpool, Event Management & Digital Library",
+      "tags": [
+        "React.js",
+        "Node.js",
+        "MySQL",
+        "REST"
+      ],
+      "link": "",
+      "points": [
+        "Goal: scalable full-stack web applications for ride-sharing, scheduling, and digital commerce.",
+        "Developed a corporate calendar application with event management using React.js, Node.js, and MySQL.",
+        "Built a carpool web app enabling ride creation, search, matching, and scheduling using React.js, Node.js, REST APIs, and MySQL.",
+        "Implemented user authentication, role-based access, and real-time updates for efficient ride coordination.",
+        "Built a library bookstore platform with Amazon/Flipkart-style PLP and PDP pages."
+      ]
+    },
+    {
+      "name": "IoT-Based Temperature Monitoring System",
+      "tags": [
+        "Raspberry Pi Pico W",
+        "BLE",
+        "React",
+        "React Native"
+      ],
+      "link": "",
+      "points": [
+        "Goal: an end-to-end IoT solution for real-time environmental data acquisition & visualization across web and mobile.",
+        "Designed an IoT system using Raspberry Pi Pico W with BLE to collect real-time temperature sensor data.",
+        "Implemented BLE communication and RESTful APIs to transmit sensor data from edge devices to cloud storage.",
+        "Developed a cross-platform Android mobile application using React Native for real-time data monitoring.",
+        "Built a React.js web dashboard for live data visualization and analytics."
+      ]
+    },
+    {
+      "name": "Melanoma Detection using Deep Learning & IoT",
+      "tags": [
+        "CNN",
+        "IoT",
+        "React.js"
+      ],
+      "link": "",
+      "points": [
+        "Goal: early detection of melanoma using deep learning and IoT-based medical imaging for real-time diagnostic support.",
+        "Developed a CNN-based melanoma detection model achieving ~87% accuracy.",
+        "Integrated IoT-based imaging with a React.js GUI for real-time diagnostics."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Engineering and Health Science Collaborative Model for Assessing AR and Vision-Based Hand-Tracking Systems",
+      "venue": "ASEE 2026",
+      "note": "",
+      "link": ""
+    },
+    {
+      "title": "Context-Aware Informatics using Model-Based Systems Engineering",
+      "venue": "IEEE ICHI 2026",
+      "note": "",
+      "link": ""
+    },
+    {
+      "title": "Interfaces for Co-Designing Augmented Reality with Application to Digital Health and Future Work Environments",
+      "venue": "INCOSE 2026",
+      "note": "",
+      "link": ""
+    },
+    {
+      "title": "Integrating Neuromorphic Sensors, Digital Twins, and MBSE Interfaces for System Validation",
+      "venue": "IEEE SYSCON 2026",
+      "note": "Best Student Paper Award",
+      "link": ""
+    },
+    {
+      "title": "Hand Tracking and Gesture Classification Using AR Technology and ML Algorithms",
+      "venue": "Master’s Thesis 2025",
+      "note": "",
+      "link": ""
+    },
+    {
+      "title": "Digital Engineering Framework with Immersive Technology (Augmented Reality)",
+      "venue": "IEEE SYSCON 2025",
+      "note": "",
+      "link": ""
+    }
+  ],
+  "workingPapers": [
+    {
+      "title": "AI-Based Dynamic Hand Tracking Using Augmented Reality and MediaPipe for Assessment of Hand Range of Motion: A Validation Study",
+      "venue": "ASHT 2026",
+      "note": "Accepted for publication in the Journal of Hand Therapy"
+    },
+    {
+      "title": "Human-Robot Interaction with Customized Hand Gestures in AR/VR/MR",
+      "venue": "MIT URTC 2026",
+      "note": "Accepted for presentation & publication in IEEE"
+    },
+    {
+      "title": "A Multimodal AI and Augmented Reality Powered Rehabilitation Assistant",
+      "venue": "MIT URTC 2026",
+      "note": "Accepted for presentation & publication in IEEE"
+    },
+    {
+      "title": "A Traceable Enterprise-to-System Architecture for Digital Health at Scale: A Unified Architecture Framework Case Study in Augmented Reality Based Remote Physical Therapy",
+      "venue": "Journal (in progress)",
+      "note": ""
+    }
+  ],
+  "researchLinks": [
+    {
+      "label": "ResearchGate",
+      "url": ""
+    },
+    {
+      "label": "Google Scholar",
+      "url": ""
+    },
+    {
+      "label": "Research Portfolio",
+      "url": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "InnovAge Spring 2026 Fellowship",
+      "detail": "Awarded for developing TheraXP through the UMass Lowell InnovAge program."
+    },
+    {
+      "title": "Dean's Medal Recipient",
+      "detail": "Outstanding Academic Achievement, highest scholarly honor, UMass Lowell 2025."
+    },
+    {
+      "title": "Best Student Paper Award",
+      "detail": "IEEE SYSCON 2026."
+    },
+    {
+      "title": "Professor Charlie Steele Memorial Scholarship Fund",
+      "detail": "Recipient, 2024–2025."
+    },
+    {
+      "title": "Certificate of Appreciation – SPOTLIGHT",
+      "detail": "Software Developer, EQ, Infosys Equinox."
+    }
+  ],
+  "involvement": [
+    "GHC'24 In-Person Volunteer (Boston Community)",
+    "IEEE Member",
+    "Women in Engineering",
+    "SWE",
+    "IEEE-HKN",
+    "WiSTEM"
+  ]
+}
